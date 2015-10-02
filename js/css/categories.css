@@ -11,12 +11,8 @@ footer{
 	margin-top: 40px;
 }
 
-.tablesorter th{
-	cursor: pointer;
-}
 
-
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 200px){
 	footer{
 		position: absolute;
 		bottom: 0;
@@ -29,4 +25,10 @@ footer{
 	.navbar-collapse form{
 		display: none;
 	}
+}
+
+@media screen and (max-width: 360px){
+  table tr th:last-child, table tr td:last-child{
+    display: none;
+  }
 }

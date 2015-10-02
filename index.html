@@ -67,37 +67,41 @@
           <div class="col-md-8">
             <h1 class="page-header"><i class="glyphicon glyphicon-dashboard"></i> Dashboard</h1>
             <h3>Latest Pages</h3>
-            <table class="table table-striped">
-              <tr>
-                <th>Page Title</th>
-                <th>Category</th>
-                <th>Author</th>
-              </tr>
-              <tr>
-                <td><a href="page.html">Sample Page One</a></td>
-                <td>Category One</td>
-                <td>John Doe</td>
-              </tr>
-              <tr>
-                <td><a href="page.html">Sample Page Two</a></td>
-                <td>Category Two</td>
-                <td>John Doe</td>
-              </tr>
-              <tr>
-                <td><a href="page.html">Sample Page Three</a></td>
-                <td>Category Three</td>
-                <td>John Doe</td>
-              </tr>
-              <tr>
-                <td><a href="page.html">Sample Page Four</a></td>
-                <td>Category Four</td>
-                <td>John Doe</td>
-              </tr>
-              <tr>
-                <td><a href="page.html">Sample Page Five</a></td>
-                <td>Category Five</td>
-                <td>John Doe</td>
-              </tr>
+            <table id="sort-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Page Title</th>
+                  <th>Category</th>
+                  <th>Author</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="page.html">Sample Page One</a></td>
+                  <td>Category One</td>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <td><a href="page.html">Sample Page Two</a></td>
+                  <td>Category Two</td>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <td><a href="page.html">Sample Page Three</a></td>
+                  <td>Category Three</td>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <td><a href="page.html">Sample Page Four</a></td>
+                  <td>Category Four</td>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <td><a href="page.html">Sample Page Five</a></td>
+                  <td>Category Five</td>
+                  <td>John Doe</td>
+                </tr>
+              </tbody>
             </table>
             <a href="pages.html" class="btn btn-default">View All Pages</a>
             <hr>
@@ -145,5 +149,13 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.tablesorter.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("#sort-table").tablesorter({
+          sortList: [[0,0], [1,0]]
+        });
+      });
+    </script>
   </body>
 </html>
