@@ -23,11 +23,6 @@ footer{
   }
 }
 
-@media screen and (max-width: 880px){
-  .navbar-collapse form{
-    display: none;
-  }
-}
 
 @media screen and (max-width: 360px){
   table tr th:last-child, table tr td:last-child{

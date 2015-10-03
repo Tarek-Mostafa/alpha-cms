@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>AlphaCMS: Add User</title>
+    <title>AlphaCMS: Profile</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/pages.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
   </head>
 
   <body>
@@ -31,7 +31,7 @@
             <li><a href="index.html">Dashboard<span class="sr-only">(current)</span></a></li>
             <li><a href="pages.html">Pages</a></li>
             <li><a href="categories.html">Categories</a></li>
-            <li class="active"><a href="users.html">Users</a></li>
+            <li><a href="users.html">Users</a></li>
           </ul>
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
@@ -51,56 +51,36 @@
       </div>
     </nav>
 
-    <section id="index">
+    <section>
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <div class="list-group">
-              <a href="index.html" class="list-group-item"><i class="glyphicon glyphicon-dashboard"></i> Dashboard
-              </a>
-              <a href="pages.html" class="list-group-item"><i class="glyphicon glyphicon-file"></i> Pages</a>
-              <a href="categories.html" class="list-group-item"><i class="glyphicon glyphicon-folder-open"></i> Categories</a>
-              <a href="users.html" class="list-group-item active"><i class="glyphicon glyphicon-user"></i> User Accounts</a>
-            </div>
+            <img src="https://cloud.githubusercontent.com/assets/13671211/10263928/cb361cd8-69fe-11e5-9eee-c967e3227441.png" class="thumbnail">
           </div>
           <div class="col-md-8">
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="page-header"><i class="glyphicon glyphicon-file"></i>Add User</h1>
-              </div>
-              
-            </div><hr>
-
-            <ol class="breadcrumb">
-              <li><a href="index.html">Dashboard</a></li>
-              <li class="active"><a href="users.html">Users</a></li>
-              <li class="active">User</li>
-            </ol>
-
-            <form>
-              <div class="form-group">
-                <label>Name</label>
-                <input type="text" class="form-control" placeholder="Enter Name">
-              </div>
-
-              <div class="form-group">
-                <label>Email</label>
-                <input type="email" class="form-control" placeholder="Enter Email">
-              </div>
-
-              <div class="form-group">
-                <label>Bio</label>
-                <textarea type="text" class="form-control" placeholder="Write Bio"></textarea>
-              </div>
-
-              <div class="form-group">
-                <label>Avatar</label>
-                <input type="file">
-                <p class="help-block">Max-size is 4Mb</p>
-
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            
+            <ul class="user-info">
+              <li><strong>Name:</strong> Tarek Mostafa</li>
+              <li><strong>Age:</strong> 22</li>
+              <li><strong>Sex:</strong> Male</li>
+              <li><strong>Country:</strong> Egypt</li>
+              <li><strong>Email:</strong> tarek_sultana@yahoo.com</li>
+              <li><strong>Group:</strong> Admin</li>
+            </ul>
+          </div>
+          <div class="col-md-12 bio">
+            <h1 class="page-header">Bio</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+            <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
       </div>
